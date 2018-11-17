@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+li {
+    list-style-type: none;
+}
+
+#box {
+    
+    padding: 50px;
+    width: 1500px;
+    background-color: azure;
+    margin: 30px auto;
+    
+}
+
+#box-menu {
+    background-color: bisque;
+    width: 1100px;
+    height: 600px;
+    padding: 20px;
+    float: left;
+    overflow: hidden;
+    
+}
+
+
+h1{
+    width: 1600px;
+    text-align: center;
+    background-color: orangered;
+    color: white;
+    margin: 30px auto;
+}
+
+img {
+    width: 70%;
+}
+
+.btn_menu {
+    padding: 20px;
+    border: 3px solid green;
+    
+    width: 33%;
+    float: left;
+    
+}
+#box-list {
+    height: 550px;
+    float: right;
+    width: 300px;
+    border: 2px solid #999;
+    background-color: rebeccapurple;
+}
+#payment {
+    font-size: 1.5rem;
+    width: 300px;
+    height: 50px;
+}
+button[id^='btn_'] {
+    color: red;
+}
