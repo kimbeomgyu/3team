@@ -77,5 +77,14 @@ img {
 button[id^='btn_'] {
     border-radius: 10px;
     color: red;
-    
+    cursor: pointer;
+}
+
+button[id^='btn_']:hover {
+    margin: -1rem;
+    font-size: 3rem;
+    z-index: 30;
+    border-width: 10px;
+    opacity: 1;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.5);
 }
