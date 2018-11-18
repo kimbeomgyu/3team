@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="dkkd.css" />
-    <script src="main.js"></script>
+    <title>:: POS for Tteokbokki Restaurant ::</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="POS_support.js"></script>
 </head>
 <body>
     <h1>떡볶이 집</h1>
     <div id="box">
-        <div id="box-menu">
+        <div id="box-menu"> 
             <ul>
-               <li class="btn_menu"><button id="btn_1"><img src="https://files.slack.com/files-pri/T5K7P28NN-FE61X59U3/tbk.png" alt=""> <br> 메뉴1 </button></li>
-               <li class="btn_menu"><button id="btn_2"><img src="https://files.slack.com/files-pri/T5K7P28NN-FE61X64R1/fry.png" alt=""><br>메뉴2</button></li>
-               <li class="btn_menu"><button id="btn_3"><img src="https://files.slack.com/files-pri/T5K7P28NN-FE61X6YCT/soondae.png" alt=""><br>메뉴3</button></li>
-               <li class="btn_menu"><button id="btn_4"><img src="https://files.slack.com/files-pri/T5K7P28NN-FE6507610/yomuk.png" alt=""><br>메뉴4</button></li>
-               <li class="btn_menu"><button id="btn_5"><img src="https://files.slack.com/files-pri/T5K7P28NN-FE6ATD013/kimbap.png" alt=""><br>메뉴5</button></li>
-               <li class="btn_menu"><button id="btn_6"><img src="https://files.slack.com/files-pri/T5K7P28NN-FE6ATE37F/friedrice.png" alt=""><br>메뉴6</button></li>
+                <!-- 메뉴를 선택하는 영역 -->
+               <li class="btn_menu"><button id="btn_1"><img class="menuimg" src="https://files.slack.com/files-pri/T5K7P28NN-FE61X59U3/tbk.png"><br />떡볶이</button></li>
+               <li class="btn_menu"><button id="btn_2"><img class="menuimg" src="https://files.slack.com/files-pri/T5K7P28NN-FE61X64R1/fry.png"><br />튀김</button></li>
+               <li class="btn_menu"><button id="btn_3"><img class="menuimg" src="https://files.slack.com/files-pri/T5K7P28NN-FE61X6YCT/soondae.png"><br />순대</button></li>
+               <li class="btn_menu"><button id="btn_4"><img class="menuimg" src="https://files.slack.com/files-pri/T5K7P28NN-FE5VBEQDS/yomuk.png"><br />어묵</button></li>
+               <li class="btn_menu"><button id="btn_5"><img class="menuimg" src="https://files.slack.com/files-pri/T5K7P28NN-FE6ATD013/kimbap.png"><br />김밥</button></li>
+               <li class="btn_menu"><button id="btn_6"><img class="menuimg" src="https://files.slack.com/files-pri/T5K7P28NN-FE6ATE37F/friedrice.png"><br />볶음밥</button></li>
             </ul>
         </div>
         <div id="box-list">
             <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
+                <!-- 주문한 메뉴가 표시될 영역 -->
             </ul>
         </div>
         <div id="total">결제금액 :    원</div>
@@ -36,5 +29,12 @@
             결제하기
         </button>
     </div>
+    <script>
+        //메뉴를 선택하면 주문한 메뉴가 화면에 표시됨
+        var menus = document.querySelectorAll("ul")[0];
+        menus.addEventListener('click',pushItem);
+
+
+    </script>
 </body>
 </html>
