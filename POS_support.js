@@ -73,7 +73,7 @@ function li_append(array){
             return;
         }
     }
-    
+      
     var li = document.createElement('li');
     
     var parentElement = document.querySelectorAll("ul")[1];
