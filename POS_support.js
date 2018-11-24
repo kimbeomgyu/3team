@@ -24,8 +24,6 @@ var price = {
     btn_5: 3500,  //김밥
     btn_6: 5500   //볶음밥
 }
-
-
 //선택한 메뉴를 #box-list 에 li 태그로 추가하는 함수
 function pushItem(el){
     var selectedElement = el.target;
@@ -58,22 +56,36 @@ function whatIselected(element,i){
 
 //선택한 메뉴를 object(selectedItem)와 array(orderedItems)에 넣어줌
 function takingOrder(item,i){
-    var btn_Num = "btn_"+i
+        var btn_Num = "btn_"+i
 
-    selectedItem.name = item;
-    selectedItem.amount = 1;
-    selectedItem.price = (selectedItem.amount) * (price[btn_Num]);
-    orderedItems.push(selectedItem);
+        selectedItem.name = item;
+        selectedItem.amount = 1;
+        selectedItem.price = (selectedItem.amount) * (price[btn_Num]);
+        orderedItems.push(selectedItem);
 }
-
 //Array에 있는 arguements를 li태그로 만들어서 ul태그 밑에 추가하는 함수
 function li_append(array){
+    
+    //버튼눌럿을때 같은 id값이 있으면 실행안됨
+    for(let i = 0; i<document.getElementById('box-list').children[0].children.length; i++){
+        if(document.getElementById('box-list').children[0].children[i].id !== array[0].name){
+        } else {
+            return;
+        }
+    }
+    
     var li = document.createElement('li');
+    
     var parentElement = document.querySelectorAll("ul")[1];
-
+    li.id = array[0].name;
     li.appendChild(document.createTextNode(array[0].name+'  '));
     li.appendChild(document.createTextNode(array[0].amount+'  개'+'  '));
     li.appendChild(document.createTextNode(array[0].price+'원'));
-    
+    li.innerHTML = (array[0].name+'  ') + (array[0].amount+'  개'+'  ') + (array[0].price)+ '원' + ' ' + '<button class="plus"> + </button>' +' '+ '<button class="minus"> - </button>';
     parentElement.appendChild(li);
+    
 }
+
+function test(){
+    alert('결제하시겠습니까? \n금액은 ' + total + '원입니다!');
+    }

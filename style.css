@@ -106,9 +106,9 @@ li {
 #total {
     color: #5b5b5b;
     width: 386px;
-    height: 55px;
-    margin-top: 30px;
-    padding-top: 10px;
+    height: 50px;
+    margin-top: 25px;
+    padding-top: 20px;
     float: right;
     background-color: #f3f3f3;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
@@ -137,3 +137,26 @@ li {
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
     transition: 0.3s;
 } 
+
+.plus {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    padding: 5px;
+    color: #f3f3f3;
+    background-color: orangered;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.minus {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    padding: 5px;
+    color: #f3f3f3;
+    background-color: orangered;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-weight: bold;
+}
