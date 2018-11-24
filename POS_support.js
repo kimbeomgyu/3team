@@ -64,7 +64,7 @@ function takingOrder(item,i){
     selectedItem.amount = 1;
     selectedItem.price = (selectedItem.amount) * (price[btn_Num]);
     orderedItems.push(selectedItem);
-}
+} 
 
 //Array에 있는 arguements를 li태그로 만들어서 ul태그 밑에 추가하는 함수
 function li_append(array){
