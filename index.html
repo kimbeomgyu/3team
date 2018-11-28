@@ -25,9 +25,8 @@
             </ul>
         </div>
         <div id="box-list">
-            <ul>
-                <!-- 주문한 메뉴가 표시될 영역 -->
-            </ul>
+            <!-- 주문한 메뉴가 표시될 영역 -->
+            <ul></ul>
         </div>
         <div id="total">결제금액 : <span></span>원</div>
         <button id="payment">
@@ -37,11 +36,14 @@
     <script>
         //메뉴를 선택하면 주문한 메뉴가 화면에 표시됨
         var menus = document.querySelectorAll("ul")[0];
-        var pay = document.body.querySelector('#payment')
-        var plus = document.querySelectorAll('.plus')[0];
+        var pay = document.body.querySelector('#payment');
+        var orderlist = document.querySelectorAll("ul")[1];
+        //var plus = document.querySelectorAll('.plus')[0];
+        
+        totalAmount()
         menus.addEventListener('click',pushItem);
+        orderlist.addEventListener('click',plusMinusDelete);
         pay.addEventListener('click',test);
-        plus.addEventListener('click',plus);
     </script>
 </body>
 </html>
