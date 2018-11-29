@@ -2,11 +2,16 @@
 <html>
 <head>
     <title>:: POS for Tteokbokki Restaurant ::</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="POS_support.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
 </head>
 <body>
-    <h1>떡볶이 집</h1>
+    <div class="title-box">
+        <img class="title-img" src="./image/h1.png" >
+        <h1 class="title"> 떡볶이 집</h1>
+    </div>
+   
     <div id="box">
         <div id="box-menu"> 
             <ul>
@@ -20,11 +25,10 @@
             </ul>
         </div>
         <div id="box-list">
-            <ul>
-                <!-- 주문한 메뉴가 표시될 영역 -->
-            </ul>
+            <!-- 주문한 메뉴가 표시될 영역 -->
+            <ul></ul>
         </div>
-        <div id="total">결제금액 :    원</div>
+        <div id="total">결제금액 : <span></span>원</div>
         <button id="payment">
             결제하기
         </button>
@@ -32,9 +36,14 @@
     <script>
         //메뉴를 선택하면 주문한 메뉴가 화면에 표시됨
         var menus = document.querySelectorAll("ul")[0];
+        var pay = document.body.querySelector('#payment');
+        var orderlist = document.querySelectorAll("ul")[1];
+        //var plus = document.querySelectorAll('.plus')[0];
+        
+        totalAmount()
         menus.addEventListener('click',pushItem);
-
-
+        orderlist.addEventListener('click',plusMinusDelete);
+        pay.addEventListener('click',test);
     </script>
 </body>
 </html>
