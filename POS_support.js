@@ -69,17 +69,6 @@ function li_append(i){
     var parentElement = document.querySelectorAll("ul")[1];
     var alreadyOrdered = (document.getElementById(btn_Num+"_ordered")!==null)
 
-<<<<<<< HEAD
-    selectedItem.name = item;
-    selectedItem.amount = 1;
-    selectedItem.price = (selectedItem.amount) * (price[btn_Num]);
-    orderedItems.push(selectedItem);
-} 
-
-//Array에 있는 arguements를 li태그로 만들어서 ul태그 밑에 추가하는 함수
-function li_append(array){
-=======
->>>>>>> issue1
     var li = document.createElement('li');
     var plusBtn = document.createElement('button'); // + 버튼 : 수량을 증가시킴
     var minusBtn = document.createElement('button'); // - 버튼 : 수량을 감소시킴
