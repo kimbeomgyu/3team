@@ -1,4 +1,4 @@
-/* 리셋 */
+﻿/* 리셋 */
 * {
     padding: 0px;
     margin: 0px;
@@ -90,7 +90,7 @@ li {
 #box-list ul li {
     padding-left: 30px;
     padding-right: 30px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 6rem;
 }
 
@@ -140,7 +140,7 @@ li {
 
 .plus {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     padding: 5px;
     color: #f3f3f3;
     background-color: orangered;
@@ -154,7 +154,7 @@ li {
 
 .minus {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     padding: 5px;
     color: #f3f3f3;
     background-color: orangered;
@@ -167,7 +167,7 @@ li {
 
 .delete {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     padding: 5px;
     color: #f3f3f3;
     background-color: orangered;
