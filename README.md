@@ -11,3 +11,4 @@ Pull requsests 요청을 확인후 <br />
 css파일 디자인 수정 이슈브런치로 나눔<br /><br />
 2018년 11월 29일<br />
 스크립트 파일 수정파일 확인 후 병합<br /><br />
+https://kimbeomgyu.github.io/Pre_27_3TEAM/
